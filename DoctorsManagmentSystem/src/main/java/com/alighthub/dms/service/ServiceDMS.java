@@ -1,5 +1,6 @@
 package com.alighthub.dms.service;
 
+import com.alighthub.dms.model.Admin;
 
 /*
  * 
@@ -12,5 +13,7 @@ package com.alighthub.dms.service;
  */
 
 public interface ServiceDMS {
+	
+	void addData(Admin admin);
 
 }

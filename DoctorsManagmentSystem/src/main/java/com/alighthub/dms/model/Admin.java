@@ -37,11 +37,134 @@ public class Admin {
 	@Column(name="Admin_Email")
 	private String adminEmail;
 	
-	@Column(name="Admin_MobileNo")
-	private int adminMobileNo;
+	public int getAdminId() {
+		return adminId;
+	}
+
+	public String getAdminFname() {
+		return adminFname;
+	}
+
+	public String getAdminLname() {
+		return adminLname;
+	}
+
+	public String getAdminEmail() {
+		return adminEmail;
+	}
+
+	public String getAdminMobileNo() {
+		return adminMobileNo;
+	}
+
 	
-	@Column(name="Status")
-	private String status;
+
+	public String getAdminStatus() {
+		return adminStatus;
+	}
+
+	public void setAdminStatus(String adminStatus) {
+		this.adminStatus = adminStatus;
+	}
+
+	public String getAdminRole() {
+		return adminRole;
+	}
+
+	public String getAdminGender() {
+		return adminGender;
+	}
+
+	public List<Employee> getEmployeeList() {
+		return employeeList;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public Login getLogin() {
+		return login;
+	}
+
+	public List<Doctor> getDoctorList() {
+		return doctorList;
+	}
+
+	public List<Employee> getEmployeList() {
+		return employeList;
+	}
+
+	public List<Nurse> getNurseList() {
+		return nurseList;
+	}
+
+	public List<Student> getStudentList() {
+		return studentList;
+	}
+
+	public void setAdminId(int adminId) {
+		this.adminId = adminId;
+	}
+
+	public void setAdminFname(String adminFname) {
+		this.adminFname = adminFname;
+	}
+
+	public void setAdminLname(String adminLname) {
+		this.adminLname = adminLname;
+	}
+
+	public void setAdminEmail(String adminEmail) {
+		this.adminEmail = adminEmail;
+	}
+
+	public void setAdminMobileNo(String adminMobileNo) {
+		this.adminMobileNo = adminMobileNo;
+	}
+
+	
+	public void setAdminRole(String adminRole) {
+		this.adminRole = adminRole;
+	}
+
+	public void setAdminGender(String adminGender) {
+		this.adminGender = adminGender;
+	}
+
+	public void setEmployeeList(List<Employee> employeeList) {
+		this.employeeList = employeeList;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public void setLogin(Login login) {
+		this.login = login;
+	}
+
+	public void setDoctorList(List<Doctor> doctorList) {
+		this.doctorList = doctorList;
+	}
+
+	public void setEmployeList(List<Employee> employeList) {
+		this.employeList = employeList;
+	}
+
+	public void setNurseList(List<Nurse> nurseList) {
+		this.nurseList = nurseList;
+	}
+
+	public void setStudentList(List<Student> studentList) {
+		this.studentList = studentList;
+	}
+
+	@Column(name="Admin_MobileNo")
+	private String adminMobileNo;
+	
+	@Column(name="Admin_Status")
+	private String adminStatus;
 	
 	@Column(name="Admin_Role")
 	private String adminRole;

@@ -1,6 +1,12 @@
 package com.alighthub.dms.serviceimpl;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.alighthub.dms.dao.AdminDao;
+import com.alighthub.dms.model.Admin;
+import com.alighthub.dms.service.ServiceDMS;
 
 /*
  * 
@@ -12,6 +18,16 @@ import org.springframework.stereotype.Service;
  *
  */
 @Service
-public class ServiceImplimentation {
+public class ServiceImplimentation implements ServiceDMS{
+	
+	@Autowired
+	AdminDao admindao;
+
+	@Override
+	public void addData(Admin admin) {
+		// TODO Auto-generated method stub
+		admindao.save(admin);
+		
+	}
 
 }
