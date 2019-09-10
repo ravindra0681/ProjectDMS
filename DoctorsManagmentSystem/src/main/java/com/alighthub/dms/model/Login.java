@@ -25,9 +25,33 @@ public class Login {
 @Column(name="Login_Id")
 private int loginId;
 @Column(name="Login_Uname")
-private String loginUname;
+private String loginuname;
 @Column(name="Login_Password")
-private String loginPassword;
+private String loginpassword;
+
+public String getLoginuname() {
+	return loginuname;
+}
+
+
+
+public String getLoginpassword() {
+	return loginpassword;
+}
+
+
+
+public void setLoginuname(String loginuname) {
+	this.loginuname = loginuname;
+}
+
+
+
+public void setLoginpassword(String loginpassword) {
+	this.loginpassword = loginpassword;
+}
+
+
 
 @Column(name="Login_Type")
 private String loginType;
@@ -36,13 +60,7 @@ public int getLoginId() {
 	return loginId;
 }
 
-public String getLoginUname() {
-	return loginUname;
-}
 
-public String getLoginPassword() {
-	return loginPassword;
-}
 
 public String getLoginType() {
 	return loginType;
@@ -52,13 +70,7 @@ public void setLoginId(int loginId) {
 	this.loginId = loginId;
 }
 
-public void setLoginUname(String loginUname) {
-	this.loginUname = loginUname;
-}
 
-public void setLoginPassword(String loginPassword) {
-	this.loginPassword = loginPassword;
-}
 
 public void setLoginType(String loginType) {
 	this.loginType = loginType;

@@ -1,13 +1,19 @@
 package com.alighthub.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alighthub.dms.model.Admin;
+import com.alighthub.dms.model.Login;
 import com.alighthub.dms.service.ServiceDMS;
 /*
  * 
@@ -33,5 +39,18 @@ public class HomeController {
 		return "Data Inserted";
 
 	}
+	
+	@GetMapping(value="/log/{loginuname}/{loginpass}")
+	public List<Admin> log(@PathVariable String loginuname,@PathVariable String loginpassword)
+	{
+		return servicedms.displayAdmin(loginuname, loginpassword);
+		
+	}
+	/*@GetMapping(value="/get/{loginuname}/{loginpassword}")
+	public Login get(@RequestParam String loginuname,@RequestParam String loginpassword)
+	{ 
+		return servicedms.admin(loginuname, loginpassword);
+		
+	}*/
 
 }

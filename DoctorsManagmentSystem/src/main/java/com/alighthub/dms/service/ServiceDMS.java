@@ -1,6 +1,9 @@
 package com.alighthub.dms.service;
 
+import java.util.List;
+
 import com.alighthub.dms.model.Admin;
+import com.alighthub.dms.model.Login;
 
 /*
  * 
@@ -15,5 +18,6 @@ import com.alighthub.dms.model.Admin;
 public interface ServiceDMS {
 	
 	void addData(Admin admin);
-
+	List<Admin> displayAdmin(String loginuname,String loginpassword);
+	/*public Login admin (String loginuname,String loginpassword);*/
 }

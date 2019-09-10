@@ -1,11 +1,15 @@
 package com.alighthub.dms.serviceimpl;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.alighthub.dms.dao.AdminDao;
+import com.alighthub.dms.dao.LoginDao;
 import com.alighthub.dms.model.Admin;
+import com.alighthub.dms.model.Login;
 import com.alighthub.dms.service.ServiceDMS;
 
 /*
@@ -22,6 +26,8 @@ public class ServiceImplimentation implements ServiceDMS{
 	
 	@Autowired
 	AdminDao admindao;
+	@Autowired
+	LoginDao logindao;
 
 	@Override
 	public void addData(Admin admin) {
@@ -29,5 +35,20 @@ public class ServiceImplimentation implements ServiceDMS{
 		admindao.save(admin);
 		
 	}
+
+	@Override
+	public List<Admin> displayAdmin(String loginuname, String loginpassword) {
+		// TODO Auto-generated method stub
+		
+		return admindao.findAll();
+	}
+
+	/*@Override
+	public Login admin(String loginuname, String loginpassword) {
+		// TODO Auto-generated method stub
+		    
+			return logindao.findByLoginunameAndLoginpassword(loginuname, loginpassword);
+		
+	}*/
 
 }

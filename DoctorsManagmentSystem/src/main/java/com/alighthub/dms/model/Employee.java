@@ -71,8 +71,8 @@ private Login login;
 private Address address;
 
 
-@ManyToOne(cascade=CascadeType.ALL)
-private Admin admin;
+/*@ManyToOne(cascade=CascadeType.ALL)
+private Admin admin;*/
 
 @OneToMany(cascade=CascadeType.ALL,mappedBy="employee")
 private List<Doctor> docList=new ArrayList<>();
@@ -131,21 +131,13 @@ public Address getAddress() {
 	return address;
 }
 
-public Admin getAdmin() {
-	return admin;
-}
+
 
 public List<Doctor> getDocList() {
 	return docList;
 }
 
-public List<Nurse> getNurseList() {
-	return nurseList;
-}
 
-public List<Student> getStudentList() {
-	return studentList;
-}
 
 public void setEmployeeId(int employeeId) {
 	this.employeeId = employeeId;
@@ -199,25 +191,15 @@ public void setAddress(Address address) {
 	this.address = address;
 }
 
-public void setAdmin(Admin admin) {
-	this.admin = admin;
-}
-
 public void setDocList(List<Doctor> docList) {
 	this.docList = docList;
 }
 
-public void setNurseList(List<Nurse> nurseList) {
-	this.nurseList = nurseList;
-}
 
-public void setStudentList(List<Student> studentList) {
-	this.studentList = studentList;
-}
 
-@OneToMany(cascade=CascadeType.ALL,mappedBy="employee")
+/*@OneToMany(cascade=CascadeType.ALL,mappedBy="employee")
 private List<Nurse> nurseList=new ArrayList<>();
 
 @OneToMany(cascade=CascadeType.ALL,mappedBy="employee")
-private List<Student> studentList=new ArrayList<>();
+private List<Student> studentList=new ArrayList<>();*/
 }

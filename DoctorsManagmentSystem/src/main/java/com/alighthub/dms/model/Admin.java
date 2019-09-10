@@ -87,22 +87,13 @@ public class Admin {
 		return login;
 	}
 
-	public List<Doctor> getDoctorList() {
-		return doctorList;
-	}
+	
 
 	public List<Employee> getEmployeList() {
 		return employeList;
 	}
 
-	public List<Nurse> getNurseList() {
-		return nurseList;
-	}
-
-	public List<Student> getStudentList() {
-		return studentList;
-	}
-
+	
 	public void setAdminId(int adminId) {
 		this.adminId = adminId;
 	}
@@ -144,20 +135,10 @@ public class Admin {
 		this.login = login;
 	}
 
-	public void setDoctorList(List<Doctor> doctorList) {
-		this.doctorList = doctorList;
-	}
+	
 
 	public void setEmployeList(List<Employee> employeList) {
 		this.employeList = employeList;
-	}
-
-	public void setNurseList(List<Nurse> nurseList) {
-		this.nurseList = nurseList;
-	}
-
-	public void setStudentList(List<Student> studentList) {
-		this.studentList = studentList;
 	}
 
 	@Column(name="Admin_MobileNo")
@@ -182,17 +163,17 @@ public class Admin {
 	/*@Column(name="Login_Id")*/
 	private Login login;
 	
-	@OneToMany(cascade=CascadeType.ALL,mappedBy="admin")
-	private List<Doctor> doctorList=new ArrayList<>();
+	/*@OneToMany(cascade=CascadeType.ALL,mappedBy="admin")
+	private List<Doctor> doctorList=new ArrayList<>();*/
 	
-	@OneToMany(cascade=CascadeType.ALL,mappedBy="admin")
+	@OneToMany(cascade=CascadeType.ALL)
 	private List<Employee> employeList=new ArrayList<>();
 	
-	@OneToMany(cascade=CascadeType.ALL,mappedBy="admin")
+	/*@OneToMany(cascade=CascadeType.ALL,mappedBy="admin")
 	private List<Nurse> nurseList=new ArrayList<>();
 	
 	@OneToMany(cascade=CascadeType.ALL,mappedBy="admin")
-	private List<Student> studentList=new ArrayList<>();
+	private List<Student> studentList=new ArrayList<>();*/
 	
 	
 }
