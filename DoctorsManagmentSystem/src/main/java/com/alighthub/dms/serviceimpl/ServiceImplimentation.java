@@ -37,10 +37,10 @@ public class ServiceImplimentation implements ServiceDMS{
 	}
 
 	@Override
-	public List<Admin> displayAdmin(String loginuname, String loginpassword) {
+	public Admin displayAdmin(String loginuname, String loginpassword) {
 		// TODO Auto-generated method stub
 		
-		return admindao.findAll();
+		return admindao.findByUnameAndPass(loginuname, loginpassword);
 	}
 
 	/*@Override

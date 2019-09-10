@@ -85,15 +85,7 @@ public class Admin {
 
 	public Login getLogin() {
 		return login;
-	}
-
-	
-
-	public List<Employee> getEmployeList() {
-		return employeList;
-	}
-
-	
+	}	
 	public void setAdminId(int adminId) {
 		this.adminId = adminId;
 	}
@@ -137,9 +129,7 @@ public class Admin {
 
 	
 
-	public void setEmployeList(List<Employee> employeList) {
-		this.employeList = employeList;
-	}
+	
 
 	@Column(name="Admin_MobileNo")
 	private String adminMobileNo;
@@ -166,8 +156,8 @@ public class Admin {
 	/*@OneToMany(cascade=CascadeType.ALL,mappedBy="admin")
 	private List<Doctor> doctorList=new ArrayList<>();*/
 	
-	@OneToMany(cascade=CascadeType.ALL)
-	private List<Employee> employeList=new ArrayList<>();
+	/*@OneToMany(cascade=CascadeType.ALL)
+	private List<Employee> employeList=new ArrayList<>();*/
 	
 	/*@OneToMany(cascade=CascadeType.ALL,mappedBy="admin")
 	private List<Nurse> nurseList=new ArrayList<>();

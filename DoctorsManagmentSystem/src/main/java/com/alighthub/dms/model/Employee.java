@@ -74,8 +74,7 @@ private Address address;
 /*@ManyToOne(cascade=CascadeType.ALL)
 private Admin admin;*/
 
-@OneToMany(cascade=CascadeType.ALL,mappedBy="employee")
-private List<Doctor> docList=new ArrayList<>();
+
 
 
 
@@ -133,9 +132,7 @@ public Address getAddress() {
 
 
 
-public List<Doctor> getDocList() {
-	return docList;
-}
+
 
 
 
@@ -191,9 +188,6 @@ public void setAddress(Address address) {
 	this.address = address;
 }
 
-public void setDocList(List<Doctor> docList) {
-	this.docList = docList;
-}
 
 
 

@@ -95,17 +95,9 @@ public Address getAddress() {
 	return address;
 }
 
-public Admin getAdmin() {
-	return admin;
-}
 
-public Employee getEmployee() {
-	return employee;
-}
 
-public Doctor getDoctor() {
-	return doctor;
-}
+
 
 public void setStudentId(int studentId) {
 	this.studentId = studentId;
@@ -146,29 +138,16 @@ public void setLogin(Login login) {
 public void setAddress(Address address) {
 	this.address = address;
 }
-
-public void setAdmin(Admin admin) {
-	this.admin = admin;
-}
-
-public void setEmployee(Employee employee) {
-	this.employee = employee;
-}
-
-public void setDoctor(Doctor doctor) {
-	this.doctor = doctor;
-}
-
 @OneToOne(cascade=CascadeType.ALL)
 /*@Column(name="Address_Details")*/
 private Address address;
 
-@ManyToOne(cascade=CascadeType.ALL)
+/*@ManyToOne(cascade=CascadeType.ALL)
 private Admin admin;
 
 @ManyToOne(cascade=CascadeType.ALL)
 private Employee employee;
 
 @ManyToOne(cascade=CascadeType.ALL)
-private Doctor doctor;
+private Doctor doctor;*/
 }

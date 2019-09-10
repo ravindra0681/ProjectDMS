@@ -40,8 +40,8 @@ public class HomeController {
 
 	}
 	
-	@GetMapping(value="/log/{loginuname}/{loginpass}")
-	public List<Admin> log(@PathVariable String loginuname,@PathVariable String loginpassword)
+	@GetMapping(value="/log/{loginuname}/{loginpassword}")
+	public Admin login(@PathVariable String loginuname,@PathVariable String loginpassword)
 	{
 		return servicedms.displayAdmin(loginuname, loginpassword);
 		

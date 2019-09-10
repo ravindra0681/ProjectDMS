@@ -201,10 +201,10 @@ private Admin admin;
 @ManyToOne(cascade=CascadeType.ALL)
 private Employee employee;
 
-@OneToMany(cascade=CascadeType.ALL,mappedBy="doctor")
+@OneToMany(cascade=CascadeType.ALL)
 private List<Nurse> nurseList=new ArrayList<>();
 
-@OneToMany(cascade=CascadeType.ALL,mappedBy="doctor")
+@OneToMany(cascade=CascadeType.ALL)
 private List<Student> studentList=new ArrayList<>();
 
 

@@ -89,17 +89,9 @@ public Login getLogin() {
 	return login;
 }
 
-public Admin getAdmin() {
-	return admin;
-}
 
-public Employee getEmployee() {
-	return employee;
-}
 
-public Doctor getDoctor() {
-	return doctor;
-}
+
 
 public void setNurseId(int nurseId) {
 	this.nurseId = nurseId;
@@ -141,17 +133,7 @@ public void setLogin(Login login) {
 	this.login = login;
 }
 
-public void setAdmin(Admin admin) {
-	this.admin = admin;
-}
 
-public void setEmployee(Employee employee) {
-	this.employee = employee;
-}
-
-public void setDoctor(Doctor doctor) {
-	this.doctor = doctor;
-}
 
 @OneToOne(cascade=CascadeType.ALL)
 /*@Column(name="Address_Details")*/
@@ -161,14 +143,14 @@ private Address address;
 /*@Column(name="Login_Details")*/
 private Login login;
 
-@ManyToOne(cascade=CascadeType.ALL)
+/*@ManyToOne(cascade=CascadeType.ALL)
 private Admin admin;
 
 @ManyToOne(cascade=CascadeType.ALL)
 private Employee employee;
 
 @ManyToOne(cascade=CascadeType.ALL)
-private Doctor doctor;
+private Doctor doctor;*/
 
 
 }
