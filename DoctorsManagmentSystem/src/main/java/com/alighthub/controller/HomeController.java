@@ -46,11 +46,6 @@ public class HomeController {
 		return servicedms.displayAdmin(loginuname, loginpassword);
 		
 	}
-	/*@GetMapping(value="/get/{loginuname}/{loginpassword}")
-	public Login get(@RequestParam String loginuname,@RequestParam String loginpassword)
-	{ 
-		return servicedms.admin(loginuname, loginpassword);
-		
-	}*/
+	
 
 }

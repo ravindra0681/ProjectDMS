@@ -2,6 +2,7 @@ package com.alighthub.dms.serviceimpl;
 
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,13 +43,5 @@ public class ServiceImplimentation implements ServiceDMS{
 		
 		return admindao.findByUnameAndPass(loginuname, loginpassword);
 	}
-
-	/*@Override
-	public Login admin(String loginuname, String loginpassword) {
-		// TODO Auto-generated method stub
-		    
-			return logindao.findByLoginunameAndLoginpassword(loginuname, loginpassword);
-		
-	}*/
 
 }

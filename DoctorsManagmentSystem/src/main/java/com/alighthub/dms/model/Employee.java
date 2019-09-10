@@ -210,9 +210,6 @@ public void setStudentList(List<Student> studentList) {
 	this.studentList = studentList;
 }
 
-
-
-
 @OneToMany(cascade=CascadeType.ALL)
 private List<Student> studentList=new ArrayList<>();
 }
