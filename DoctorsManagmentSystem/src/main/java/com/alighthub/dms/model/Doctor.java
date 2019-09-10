@@ -51,9 +51,7 @@ public int getDoctorId() {
 		return doctorRole;
 	}
 
-	public String getLicencesNo() {
-		return licencesNo;
-	}
+	
 
 	public String getDoctorGender() {
 		return doctorGender;
@@ -63,8 +61,14 @@ public int getDoctorId() {
 		return doctorSpecialization;
 	}
 
-	public String getDoctor_Qualification() {
-		return doctor_Qualification;
+	
+
+	public String getDoctorlicencesNo() {
+		return doctorlicencesNo;
+	}
+
+	public void setDoctorlicencesNo(String doctorlicencesNo) {
+		this.doctorlicencesNo = doctorlicencesNo;
 	}
 
 	public Address getAddress() {
@@ -74,23 +78,6 @@ public int getDoctorId() {
 	public Login getLogin() {
 		return login;
 	}
-
-	public Admin getAdmin() {
-		return admin;
-	}
-
-	public Employee getEmployee() {
-		return employee;
-	}
-
-	public List<Nurse> getNurseList() {
-		return nurseList;
-	}
-
-	public List<Student> getStudentList() {
-		return studentList;
-	}
-
 	public void setDoctorId(int doctorId) {
 		this.doctorId = doctorId;
 	}
@@ -115,9 +102,7 @@ public int getDoctorId() {
 		this.doctorRole = doctorRole;
 	}
 
-	public void setLicencesNo(String licencesNo) {
-		this.licencesNo = licencesNo;
-	}
+	
 
 	public void setDoctorGender(String doctorGender) {
 		this.doctorGender = doctorGender;
@@ -127,33 +112,27 @@ public int getDoctorId() {
 		this.doctorSpecialization = doctorSpecialization;
 	}
 
-	public void setDoctor_Qualification(String doctor_Qualification) {
-		this.doctor_Qualification = doctor_Qualification;
-	}
+	
 
 	public void setAddress(Address address) {
 		this.address = address;
+	}
+
+	public String getDoctorQualification() {
+		return doctorQualification;
+	}
+
+	public void setDoctorQualification(String doctorQualification) {
+		this.doctorQualification = doctorQualification;
 	}
 
 	public void setLogin(Login login) {
 		this.login = login;
 	}
 
-	public void setAdmin(Admin admin) {
-		this.admin = admin;
-	}
+	
 
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
-	}
-
-	public void setNurseList(List<Nurse> nurseList) {
-		this.nurseList = nurseList;
-	}
-
-	public void setStudentList(List<Student> studentList) {
-		this.studentList = studentList;
-	}
+	
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -177,7 +156,7 @@ private int doctorMobileNo;
 private String doctorRole;
 
 @Column(name="Licences_No")
-private String licencesNo;
+private String doctorlicencesNo;
 @Column(name="Doctor_Gender")
 private String doctorGender;
 @Column(name="Doctor_Specialization")
@@ -185,7 +164,7 @@ private String doctorSpecialization;
 
 
 @Column(name="Doctor_Qualification")
-private String doctor_Qualification;
+private String doctorQualification;
 
 
 @OneToOne(cascade=CascadeType.ALL)
@@ -195,17 +174,17 @@ private Address address;
 /*@Column(name="Login_Details")*/
 private Login login;
 
-@ManyToOne(cascade=CascadeType.ALL)
-private Admin admin;
+/*@ManyToOne(cascade=CascadeType.ALL)
+private Admin admin;*/
 
-@ManyToOne(cascade=CascadeType.ALL)
-private Employee employee;
+/*@ManyToOne(cascade=CascadeType.ALL)
+private Employee employee;*/
 
-@OneToMany(cascade=CascadeType.ALL)
+/*@OneToMany(cascade=CascadeType.ALL)
 private List<Nurse> nurseList=new ArrayList<>();
 
 @OneToMany(cascade=CascadeType.ALL)
-private List<Student> studentList=new ArrayList<>();
+private List<Student> studentList=new ArrayList<>();*/
 
 
 }

@@ -191,9 +191,28 @@ public void setAddress(Address address) {
 
 
 
-/*@OneToMany(cascade=CascadeType.ALL,mappedBy="employee")
+@OneToMany(cascade=CascadeType.ALL)
 private List<Nurse> nurseList=new ArrayList<>();
 
-@OneToMany(cascade=CascadeType.ALL,mappedBy="employee")
-private List<Student> studentList=new ArrayList<>();*/
+public List<Nurse> getNurseList() {
+	return nurseList;
+}
+
+public List<Student> getStudentList() {
+	return studentList;
+}
+
+public void setNurseList(List<Nurse> nurseList) {
+	this.nurseList = nurseList;
+}
+
+public void setStudentList(List<Student> studentList) {
+	this.studentList = studentList;
+}
+
+
+
+
+@OneToMany(cascade=CascadeType.ALL)
+private List<Student> studentList=new ArrayList<>();
 }
