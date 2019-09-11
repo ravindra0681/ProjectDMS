@@ -1,0 +1,422 @@
+{
+"adminFname":"Ravindra",
+	"adminLname":"Sonawane",
+	"adminEmail":"ravindradypcoe@gmail.com",
+     "adminMobileNo":"76767679",
+	"adminStatus":"Active",
+	"adminRole":"Admin",
+	"adminGender":"Male",
+	"login":{
+		"loginuname":"sam",
+		"loginpassword":"sam",
+		"loginType":"Admin"
+	},
+	"address":{
+		"addressArea":"akurdi",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412101
+	},
+	"employeeList":[
+		{
+			"employeeFname":"Priya",
+			"employeeLname":"Datarak",
+			"employeeEmail":"Priya@gmail.com",
+			"employeeGender":"Female",
+			"employeeMobileNo":111111,
+			"employeeRole":"Employee",
+			"employeeSalary":23900,
+			"employeeStatus":"Active",
+			"employeeAddress":"Pune",
+			"employeeJoiningDate":"01/01/1990",
+			"login":{
+		"loginuname":"priya",
+		"loginpassword":"priya",
+		"loginType":"Employee"
+	},
+	"address":{
+		"addressArea":"Katraj",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412191
+	},
+	"doctorList":[
+		{
+			"doctorFname":"Dr Gulati",
+			"doctorLname":"Gulshan",
+			"doctorEmail":"gulati@gmail.com",
+			"doctorMobileNo":222222,
+			"doctorStatus":"Active",
+			"doctorRole":"Doctor",
+			"doctorLicencesNo":"ART43T",
+			"doctorSpecialization":"Opearation",
+			"doctorQualification":"MD",
+			"login":{
+		"loginuname":"gula",
+		"loginpassword":"gula",
+		"loginType":"Doctor"
+	},
+	"address":{
+		"addressArea":"Dehuroad",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":876542
+	},
+	"nurseList":[
+		{
+			"nurseFname":"sonu",
+			"nurseLname":"dimoal",
+			"nurseEmail":"sonu@gmail.com",
+			"nurseMobileNo":7578677,
+			"nurseRole":"Nurse",
+			"nurseGender":"Female",
+			"nurseQualification":"BSC",
+			"login":{
+		"loginuname":"sonu",
+		"loginpassword":"sonu",
+		"loginType":"Nurse"
+	},
+	"address":{
+		"addressArea":"Pimpri",
+		"addressCity":"PCMC",
+		"addressState":"MH",
+		"addressPincode":09876
+	}
+			
+		},
+		{
+			
+			
+		}
+		
+		
+		
+		
+		
+		],
+	"studentList":[{
+		"studentFname":"priyanka",
+		"studentLname":"toraskar",
+		"studentMobileNo":25262,
+		"studentEmail":"priyanka@gmail.com",
+		"studentStatus":"Active",
+		"studentRole":"Student",
+		"login":{
+		"loginuname":"priya",
+		"loginpassword":"priya",
+		"loginType":"Student"
+	},
+	"address":{
+		"addressArea":"dehugao",
+		"addressCity":"Mumbai",
+		"addressState":"GJ",
+		"addressPincode":718101
+	}
+		
+	}
+	]
+			
+		}
+		]
+			
+		},
+		
+		
+		{
+			"employeeFname":"Nikhil",
+			"employeeLname":"Sonawane",
+			"employeeEmail":"nikhil@gmail.com",
+			"employeeGender":"male",
+			"employeeMobileNo":2526262,
+			"employeeRole":"Employee",
+			"employeeSalary":23900,
+			"employeeStatus":"Active",
+			"employeeAddress":"Pune",
+			"employeeJoiningDate":"01/01/1990",
+			"login":{
+		"loginuname":"niku",
+		"loginpassword":"niku",
+		"loginType":"Employee"
+	},
+	"address":{
+		"addressArea":"Katraj",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412191
+	},
+	"doctorList":[
+		{
+			"doctorFname":"qwe",
+			"doctorLname":"rty",
+			"doctorEmail":"rty@gmail.com",
+			"doctorMobileNo":12345,
+			"doctorStatus":"Active",
+			"doctorRole":"Doctor",
+			"doctorLicencesNo":"ART43T",
+			"doctorSpecialization":"Opearation",
+			"doctorQualification":"MD",
+			"login":{
+		"loginuname":"stud",
+		"loginpassword":"stud",
+		"loginType":"Doctor"
+	},
+	"address":{
+		"addressArea":"Sangali",
+		"addressCity":"Pumbai",
+		"addressState":"MH",
+		"addressPincode":65191
+	},
+	"nurseList":[
+		{
+			"nurseFname":"sonu",
+			"nurseLname":"dimoal",
+			"nurseEmail":"sonu@gmail.com",
+			"nurseMobileNo":7578677,
+			"nurseRole":"Nurse",
+			"nurseGender":"Female",
+			"nurseQualification":"BSC",
+			"login":{
+		"loginuname":"stud",
+		"loginpassword":"stud",
+		"loginType":"Nurse"
+	},
+	"address":{
+		"addressArea":"Sangali",
+		"addressCity":"Pumbai",
+		"addressState":"MH",
+		"addressPincode":65191
+	}
+			
+		}
+		],
+	
+	
+	"studentList":[{
+		"studentFname":"priya",
+		"studentLname":"torant",
+		"studentMobileNo":25262,
+		"studentEmail":"sgajsg@gmail.com",
+		"studentStatus":"Active",
+		"studentRole":"Student",
+		"login":{
+		"loginuname":"ram",
+		"loginpassword":"ram",
+		"loginType":"student"
+	},
+	"address":{
+		"addressArea":"dehu",
+		"addressCity":"Mumbai",
+		"addressState":"GJ",
+		"addressPincode":418101
+	}
+		
+	}
+	]
+			
+		}
+		]
+			
+		},
+		{
+			"employeeFname":"Afsana",
+			"employeeLname":"Shaikh",
+			"employeeEmail":"afsana@gmail.com",
+			"employeeGender":"Female",
+			"employeeMobileNo":2526262,
+			"employeeRole":"Employee",
+			"employeeSalary":23900,
+			"employeeStatus":"Active",
+			"employeeAddress":"Pune",
+			"employeeJoiningDate":"01/01/1990",
+			"login":{
+		"loginuname":"afsa",
+		"loginpassword":"afsa",
+		"loginType":"Employee"
+	},
+	"address":{
+		"addressArea":"Katraj",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412191
+	},
+	"doctorList":[
+		{
+			"doctorFname":"anand",
+			"doctorLname":"kadam",
+			"doctorEmail":"anand@gmail.com",
+			"doctorMobileNo":12345,
+			"doctorStatus":"Active",
+			"doctorRole":"Doctor",
+			"doctorLicencesNo":"ART43T",
+			"doctorSpecialization":"Opearation",
+			"doctorQualification":"MD",
+			"login":{
+		"loginuname":"anan",
+		"loginpassword":"anan",
+		"loginType":"Doctor"
+	},
+	"address":{
+		"addressArea":"Sangali",
+		"addressCity":"Pumbai",
+		"addressState":"MH",
+		"addressPincode":65191
+	},
+	"nurseList":[
+		{
+			"nurseFname":"sonu",
+			"nurseLname":"dimoal",
+			"nurseEmail":"sonu@gmail.com",
+			"nurseMobileNo":7578677,
+			"nurseRole":"Nurse",
+			"nurseGender":"Female",
+			"nurseQualification":"BSC",
+			"login":{
+		"loginuname":"stud",
+		"loginpassword":"stud",
+		"loginType":"Nurse"
+	},
+	"address":{
+		"addressArea":"Sangali",
+		"addressCity":"Pumbai",
+		"addressState":"MH",
+		"addressPincode":65191
+	}
+			
+		},
+		{
+			
+			
+		}
+		
+		
+		
+		
+		
+		],
+	"studentList":[{
+		"studentFname":"priya",
+		"studentLname":"torant",
+		"studentMobileNo":25262,
+		"studentEmail":"sgajsg@gmail.com",
+		"studentStatus":"Active",
+		"studentRole":"Student",
+		"login":{
+		"loginuname":"ram",
+		"loginpassword":"ram",
+		"loginType":"student"
+	},
+	"address":{
+		"addressArea":"dehu",
+		"addressCity":"Mumbai",
+		"addressState":"GJ",
+		"addressPincode":418101
+	}
+		
+	}
+	]
+			
+		}
+		]
+			
+		},
+		
+		
+		{
+			"employeeFname":"akash",
+			"employeeLname":"deshmukh",
+			"employeeEmail":"akash@gmail.com",
+			"employeeGender":"male",
+			"employeeMobileNo":2526262,
+			"employeeRole":"Employee",
+			"employeeSalary":23900,
+			"employeeStatus":"Active",
+			"employeeAddress":"Pune",
+			"employeeJoiningDate":"01/01/1990",
+			"login":{
+		"loginuname":"akas",
+		"loginpassword":"akas",
+		"loginType":"Employee"
+	},
+	"address":{
+		"addressArea":"Katraj",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412191
+	},
+	"doctorList":[
+		{
+			"doctorFname":"qwe",
+			"doctorLname":"rty",
+			"doctorEmail":"rty@gmail.com",
+			"doctorMobileNo":12345,
+			"doctorStatus":"Active",
+			"doctorRole":"Doctor",
+			"doctorLicencesNo":"ART43T",
+			"doctorSpecialization":"Opearation",
+			"doctorQualification":"MD",
+			"login":{
+		"loginuname":"stud",
+		"loginpassword":"stud",
+		"loginType":"Doctor"
+	},
+	"address":{
+		"addressArea":"Sangali",
+		"addressCity":"Pumbai",
+		"addressState":"MH",
+		"addressPincode":65191
+	},
+	"nurseList":[
+		{
+			"nurseFname":"sonu",
+			"nurseLname":"dimoal",
+			"nurseEmail":"sonu@gmail.com",
+			"nurseMobileNo":7578677,
+			"nurseRole":"Nurse",
+			"nurseGender":"Female",
+			"nurseQualification":"BSC",
+			"login":{
+		"loginuname":"stud",
+		"loginpassword":"stud",
+		"loginType":"Doctor"
+	},
+	"address":{
+		"addressArea":"solapur",
+		"addressCity":"pakak",
+		"addressState":"MH",
+		"addressPincode":65191
+	}
+			
+		}
+		],
+	
+	
+	"studentList":[{
+		"studentFname":"sakja",
+		"studentLname":"ksusu",
+		"studentMobileNo":25262,
+		"studentEmail":"sakjag@gmail.com",
+		"studentStatus":"Active",
+		"studentRole":"Student",
+		"login":{
+		"loginuname":"ram",
+		"loginpassword":"ram",
+		"loginType":"student"
+	},
+	"address":{
+		"addressArea":"Uppal",
+		"addressCity":"hybad",
+		"addressState":"AP",
+		"addressPincode":78654
+	}
+		
+	}
+	]
+			
+		}
+		]
+			
+		}
+		]
+
+
+}

@@ -1,0 +1,124 @@
+{
+"adminFname":"Ravindra",
+	"adminLname":"Sonawane",
+	"adminEmail":"ravindradypcoe@gmail.com",
+     "adminMobileNo":"76767679",
+	"adminStatus":"Active",
+	"adminRole":"Admin",
+	"adminGender":"Male",
+	"login":{
+		"loginuname":"sam",
+		"loginpassword":"sam",
+		"loginType":"Admin"
+	},
+	"address":{
+		"addressArea":"akurdi",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412101
+	},
+	"employeeList":[
+		{
+			"employeeFname":"Priya",
+			"employeeLname":"Datarak",
+			"employeeEmail":"Priya@gmail.com",
+			"employeeGender":"Female",
+			"employeeMobileNo":111111,
+			"employeeRole":"Employee",
+			"employeeSalary":23900,
+			"employeeStatus":"Active",
+			"employeeAddress":"Pune",
+			"employeeJoiningDate":"01/01/1990",
+			"login":{
+		"loginuname":"priya",
+		"loginpassword":"priya",
+		"loginType":"Employee"
+	},
+	"address":{
+		"addressArea":"Katraj",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412191
+	},
+	"doctorList":[
+		{
+			"doctorFname":"Dr Gulati",
+			"doctorLname":"Gulshan",
+			"doctorEmail":"gulati@gmail.com",
+			"doctorMobileNo":222222,
+			"doctorStatus":"Active",
+			"doctorRole":"Doctor",
+			"doctorLicencesNo":"ART43T",
+			"doctorSpecialization":"Opearation",
+			"doctorQualification":"MD" ,
+			"login":{
+		"loginuname":"gula",
+		"loginpassword":"gula",
+		"loginType":"Doctor"
+	},
+	"address":{
+		"addressArea":"Dehuroad",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":876542
+	}
+			
+			}
+			],
+			
+			"nurseList":[
+		{
+			"nurseFname":"sonu",
+			"nurseLname":"dimoal",
+			"nurseEmail":"sonu@gmail.com",
+			"nurseMobileNo":7578677,
+			"nurseRole":"Nurse",
+			"nurseGender":"Female",
+			"nurseQualification":"BSC" ,
+			"login":{
+		"loginuname":"sonu",
+		"loginpassword":"sonu",
+		"loginType":"Nurse"
+	},
+	"address":{
+		"addressArea":"Pimpri",
+		"addressCity":"PCMC",
+		"addressState":"MH",
+		"addressPincode":989876
+	}
+			
+			}
+			],
+			
+			
+			"studentList":[{
+		"studentFname":"priyanka",
+		"studentLname":"toraskar",
+		"studentMobileNo":25262,
+		"studentEmail":"priyanka@gmail.com",
+		"studentStatus":"Active",
+		"studentRole":"Student",
+		"login":{
+		"loginuname":"priya",
+		"loginpassword":"priya",
+		"loginType":"Student"
+	},
+	"address":{
+		"addressArea":"dehugao",
+		"addressCity":"Mumbai",
+		"addressState":"GJ",
+		"addressPincode":718101
+	}
+		
+		}
+		]
+		}
+			]
+			
+	
+	
+	}
+	
+	
+	
+	}

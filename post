@@ -1,0 +1,120 @@
+{
+	"adminFname":"Ravindra",
+	"adminLname":"Sonawane",
+	"adminEmail":"ravindradypcoe@gmail.com",
+     "adminMobileNo":"76767679",
+	"adminStatus":"Active",
+	"adminRole":"Admin",
+	"adminGender":"Male",
+	"login":{
+		"loginuname":"sam",
+		"loginpassword":"sam",
+		"loginType":"admin"
+	},
+	"address":{
+		"addressArea":"akurdi",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412101
+	},
+	"employeeList":[
+		{
+			"employeeFname":"soki",
+			"employeeLname":"nik",
+			"employeeEmail":"nik@gmail.com",
+			"employeeGender":"male",
+			"employeeMobileNo":2526262,
+			"employeeRole":"Employee",
+			"employeeSalary":23900,
+			"employeeStatus":"Active",
+			"employeeAddress":"Pune",
+			"employeeJoiningDate":"01/01/1990",
+			"login":{
+		"loginuname":"eravi",
+		"loginpassword":"eravi",
+		"loginType":"Employee1"
+	},
+	"address":{
+		"addressArea":"Katraj",
+		"addressCity":"Pune",
+		"addressState":"MH",
+		"addressPincode":412191
+	},
+	"doctorList":[
+		{
+			"doctorFname":"qwe",
+			"doctorLname":"rty",
+			"doctorEmail":"rty@gmail.com",
+			"doctorMobileNo":12345,
+			"doctorStatus":"Active",
+			"doctorRole":"Doctor",
+			"doctorLicencesNo":"ART43T",
+			"doctorSpecialization":"Opearation",
+			"doctorQualification":"MD",
+			"login":{
+		"loginuname":"stud",
+		"loginpassword":"stud",
+		"loginType":"Doctor"
+	},
+	"address":{
+		"addressArea":"Sangali",
+		"addressCity":"Pumbai",
+		"addressState":"MH",
+		"addressPincode":65191
+	},
+	"studentList":[{
+		"studentFname":"priya",
+		"studentLname":"torant",
+		"studentMobileNo":25262,
+		"studentEmail":"sgajsg@gmail.com",
+		"studentStatus":"Active",
+		"studentRole":"Student",
+		"login":{
+		"loginuname":"ram",
+		"loginpassword":"ram",
+		"loginType":"student"
+	},
+	"address":{
+		"addressArea":"dehu",
+		"addressCity":"Mumbai",
+		"addressState":"GJ",
+		"addressPincode":418101
+	}
+	
+	}
+			
+	]
+			
+			
+		},
+		{
+			"employeeFname":"soki2",
+			"employeeLname":"nik2",
+			"employeeEmail":"nik@gmail.com2",
+			"employeeGender":"male2",
+			"employeeMobileNo":252626,
+			"employeeRole":"Employee2",
+			"employeeSalary":25000,
+			"employeeStatus":"Active2",
+			"employeeAddress":"Pune2",
+			"employeeJoiningDate":"06/01/1990",
+			"login":{
+		"loginuname":"eravi2",
+		"loginpassword":"eravi2",
+		"loginType":"Employee2"
+	},
+	"address":{
+		"addressArea":"Katraj2",
+		"addressCity":"Pune2",
+		"addressState":"MH2",
+		"addressPincode":41276
+	}
+	
+			
+			
+		}
+		
+		
+		]
+
+}
