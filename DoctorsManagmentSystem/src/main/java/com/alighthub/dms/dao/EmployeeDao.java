@@ -1,6 +1,7 @@
 package com.alighthub.dms.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.alighthub.dms.model.Employee;
@@ -16,5 +17,12 @@ import com.alighthub.dms.model.Employee;
  */
 @Repository
 public interface EmployeeDao extends JpaRepository<Employee,Integer>{
+	
+	@Query(name="findByLoginId")
+	public Employee findByLogin(String id);
+
+	@Query("from Employee e where e.login.loginId=:id")
+   public Employee findByLoginId(int id); 
+
 
 }

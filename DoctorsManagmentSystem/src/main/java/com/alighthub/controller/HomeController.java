@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,6 +28,7 @@ import com.alighthub.dms.service.ServiceDMS;
 @RestController
 
 @RequestMapping(value="admin")
+@CrossOrigin("*")
 public class HomeController {
 	@Autowired
 	ServiceDMS servicedms;
@@ -47,5 +49,23 @@ public class HomeController {
 		
 	}
 	
+	@GetMapping(value="/get")
+	public List<Admin> get()
+	{
+		return servicedms.getData();
+		
+	}
 
+	@DeleteMapping(value="/del/{adminId}")
+	public List<Admin> delete(@PathVariable int adminId)
+	{
+		return servicedms.delete(adminId);
+		
+	}
+	@GetMapping(value="/getdata/{adminId}")
+	public Admin getdata(@PathVariable int adminId)
+	{
+		return servicedms.edit(adminId);
+		
+	}
 }
