@@ -11,19 +11,31 @@ import com.alighthub.dms.service.StudentServiceInterface;
 public class StudentServiceImplimentation implements StudentServiceInterface{
 	
 	@Autowired
-	StudentDao studentRepository;
+	StudentDao studentDao;
 	
 	@Override
-	public void addStudent(Student student) {
-	
-		studentRepository.save(student);	
+	public void addStudentData(Student student) {
+        System.out.println("SERVICE IMPLIMENTATION ");
+		studentDao.save(student);
 		
 	}
 	@Override
-	public List<Student> getStudentData() {
+	public Student getStudentData(String un, String ps) {
 		// TODO Auto-generated method stub
-	
-		return studentRepository.findAll();
+		
+		return studentDao.findByUnameAndPass(un, ps);
 	}
-
+	@Override
+	public Student getStudentById(int id) {
+		// TODO Auto-generated method stub
+		System.out.println("fiend by id service implimentation..YYYYYYYYYYYYOOOOOOOOOOOOOOOOO...");
+		return studentDao.findByStudentsId(id);   // this is create Query Custom in StudentDao
+		
+		//return studentDao.findById(id).get();
+	}
+	@Override
+	public void deleteStudent(int id) {
+	studentDao.deleteById(id);
+		
+	}
 }

@@ -159,22 +159,38 @@ public Employee showEmp(@PathVariable int loginId)
 
 StudentServiceInterface studentService;
 
-@PostMapping("/addstud")
+@PostMapping("/addstudent")
 public String addStudentData(@RequestBody Student student)
 {
-	
-	studentService.addStudent(student);
-	return "Yess successfully add data..........";
+	studentService.addStudentData(student);
+	return "add DATA SUCCESSFULL";
+}
+
+@GetMapping("/get/{un}/{ps}")
+public Student getStudentData(@PathVariable String un,@PathVariable String ps)
+{
+	System.out.println("un="+un+"And Ps="+ps);
+	return studentService.getStudentData(un,ps);
 	
 }
 
-@GetMapping("/getstud")
-public List<Student> getStudentData()
+@GetMapping("/get/{id}") 
+public Student getStudent(@PathVariable int id)
 {
-	
-	return studentService.getStudentData();
-	
+	return studentService.getStudentById(id);
+
 }
+
+@DeleteMapping("/delete/{id}")
+public String deleteStudent(@PathVariable int id)
+{
+	studentService.deleteStudent(id);
+	return "delete record succesfully................";
+}
+
+
+
+
 
 /**
  * Nurse operations prepared by Pradeep
