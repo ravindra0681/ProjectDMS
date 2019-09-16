@@ -16,8 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alighthub.dms.model.Doctor;
 import com.alighthub.dms.model.Employee;
 import com.alighthub.dms.model.Login;
+import com.alighthub.dms.model.Nurse;
+import com.alighthub.dms.model.Student;
 import com.alighthub.dms.service.DoctorServiceInterface;
 import com.alighthub.dms.service.EmployeeServiceInterface;
+import com.alighthub.dms.service.NurseServiceInterface;
+import com.alighthub.dms.service.StudentServiceInterface;
 
 /*
  * 
@@ -140,5 +144,83 @@ public Employee showEmp(@PathVariable int loginId)
 }
 	
 	
+
+@Autowired
+
+StudentServiceInterface studentService;
+
+@PostMapping("/add")
+public String addStudentData(@RequestBody Student student)
+{
+	
+	studentService.addStudent(student);
+	return "Yess successfully add data..........";
+	
+}
+
+@GetMapping("/get")
+public List<Student> getStudentData()
+{
+	
+	return studentService.getStudentData();
+	
+}
+
+
+
+@Autowired
+NurseServiceInterface ni;
+
+
+@PostMapping("/add")
+public String addData(@RequestBody Nurse n1 )
+{
+	
+	ni.addData(n1);
+	return "Nurse Data added successfully";
+	
+}
+
+/*
+ * @GetMapping("/get/{loginuname}/{loginpassword}") public List<Nurse>
+ * getData(@PathVariable String loginuname, @PathVariable String loginpassword)
+ * {
+ * 
+ * List<Nurse> l=ni.displayNurse(loginuname, loginpassword); return l; }
+ */
+
+@GetMapping("/get")
+public List<Nurse> getNData()
+{
+	
+	List<Nurse> l=ni.displayNurse();
+	return l;	
+}
+
+@GetMapping ("/edit/{nurseId}")
+public Nurse editNData(@PathVariable int nurseId)
+{
+	
+	Nurse n=ni.editData(nurseId);
+	return n;
+	
+}
+
+@PutMapping("/update")
+public List<Nurse> updateData(@RequestBody Nurse n)
+{
+    List<Nurse>	l=ni.updateData(n);
+	return l;
+	
+}
+
+@DeleteMapping("/delete/{nurseId}")
+public List<Nurse> deleteData(@PathVariable int nurseId)
+{
+	List<Nurse> l=ni.deleteData(nurseId);
+	return l;
+	
+}
+
 
 }
