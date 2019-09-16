@@ -166,7 +166,7 @@ public String addStudentData(@RequestBody Student student)
 	return "add DATA SUCCESSFULL";
 }
 
-@GetMapping("/get/{un}/{ps}")
+@GetMapping("/getstudent/{un}/{ps}")
 public Student getStudentData(@PathVariable String un,@PathVariable String ps)
 {
 	System.out.println("un="+un+"And Ps="+ps);
@@ -174,14 +174,14 @@ public Student getStudentData(@PathVariable String un,@PathVariable String ps)
 	
 }
 
-@GetMapping("/get/{id}") 
+@GetMapping("/getstudent/{id}") 
 public Student getStudent(@PathVariable int id)
 {
 	return studentService.getStudentById(id);
 
 }
 
-@DeleteMapping("/delete/{id}")
+@DeleteMapping("/deletestudent/{id}")
 public String deleteStudent(@PathVariable int id)
 {
 	studentService.deleteStudent(id);
