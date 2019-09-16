@@ -1,13 +1,17 @@
 package com.alighthub.dms.service;
 
-import java.util.List;
+
 
 import com.alighthub.dms.model.Student;
 
 public interface StudentServiceInterface {
 	
-	void addStudent(Student student);
+	void addStudentData(Student student);
 
-	List<Student> getStudentData();
+	Student getStudentData(String un, String ps);
+
+	Student getStudentById(int id);
+
+	void deleteStudent(int id);
 
 }
