@@ -35,6 +35,7 @@ public class ServiceImplimentation implements ServiceDMS{
 		// TODO Auto-generated method stub
 		admindao.save(admin);
 		
+		
 	}
 
 	@Override
@@ -42,6 +43,25 @@ public class ServiceImplimentation implements ServiceDMS{
 		// TODO Auto-generated method stub
 		
 		return admindao.findByUnameAndPass(loginuname, loginpassword);
+	}
+
+	@Override
+	public List<Admin> getData() {
+		// TODO Auto-generated method stub
+		return admindao.findAll();
+	}
+
+	@Override
+	public List<Admin> delete(int adminId) {
+		// TODO Auto-generated method stub
+		admindao.deleteById(adminId);
+		return admindao.findAll();
+	}
+
+	@Override
+	public Admin edit(int id) {
+		// TODO Auto-generated method stub
+		return admindao.findById(id).get();
 	}
 
 }

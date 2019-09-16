@@ -19,5 +19,9 @@ public interface ServiceDMS {
 	
 	void addData(Admin admin);
 	Admin displayAdmin(String loginuname,String loginpassword);
+	List<Admin> getData();
+	
+	List<Admin> delete(int adminId);
+	Admin edit(int id);
 	
 }
