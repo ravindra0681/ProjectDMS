@@ -43,7 +43,7 @@ private String nurseStatus;
 private String nurseRole;
 
 @Column(name="Nurse_Gender")
-private String nurseGenader;
+private String nurseGender;
 
 
 /*@Column(name="Nurse_Department")
@@ -77,9 +77,7 @@ public String getNurseRole() {
 	return nurseRole;
 }
 
-public String getNurseGenader() {
-	return nurseGenader;
-}
+
 
 public Address getAddress() {
 	return address;
@@ -121,8 +119,14 @@ public void setNurseRole(String nurseRole) {
 	this.nurseRole = nurseRole;
 }
 
-public void setNurseGenader(String nurseGenader) {
-	this.nurseGenader = nurseGenader;
+
+
+public String getNurseGender() {
+	return nurseGender;
+}
+
+public void setNurseGender(String nurseGender) {
+	this.nurseGender = nurseGender;
 }
 
 public void setAddress(Address address) {

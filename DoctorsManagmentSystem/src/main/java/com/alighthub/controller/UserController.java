@@ -35,12 +35,17 @@ import com.alighthub.dms.service.StudentServiceInterface;
 
 @RestController
 @CrossOrigin("*")
-@RequestMapping("/doc")
+
+
 public class UserController
 {
 	@Autowired
 	private EmployeeServiceInterface serve;
 	
+	
+	/**
+	 * Doctors operations prepared by Nilesh
+	 */
 	@Autowired
 	private DoctorServiceInterface dr;
 	
@@ -93,6 +98,9 @@ public class UserController
 	}
 	
 
+	/**
+	 * Employee operations prepared by Samarjeet
+	 */
 	
 	
 	@PostMapping("/addemp")
@@ -143,13 +151,15 @@ public Employee showEmp(@PathVariable int loginId)
 	return serve.showEmp(loginId);
 }
 	
-	
+/**
+ * Student operations prepared by Ram
+ */
 
 @Autowired
 
 StudentServiceInterface studentService;
 
-@PostMapping("/add")
+@PostMapping("/addstud")
 public String addStudentData(@RequestBody Student student)
 {
 	
@@ -158,7 +168,7 @@ public String addStudentData(@RequestBody Student student)
 	
 }
 
-@GetMapping("/get")
+@GetMapping("/getstud")
 public List<Student> getStudentData()
 {
 	
@@ -166,18 +176,20 @@ public List<Student> getStudentData()
 	
 }
 
-
+/**
+ * Nurse operations prepared by Pradeep
+ */
 
 @Autowired
 NurseServiceInterface ni;
 
 
-@PostMapping("/add")
+@PostMapping("/addnurse")
 public String addData(@RequestBody Nurse n1 )
 {
 	
 	ni.addData(n1);
-	return "Nurse Data added successfully";
+	return "Nurse Data added successfull";
 	
 }
 
@@ -189,7 +201,7 @@ public String addData(@RequestBody Nurse n1 )
  * List<Nurse> l=ni.displayNurse(loginuname, loginpassword); return l; }
  */
 
-@GetMapping("/get")
+@GetMapping("/getnurse")
 public List<Nurse> getNData()
 {
 	
@@ -197,7 +209,7 @@ public List<Nurse> getNData()
 	return l;	
 }
 
-@GetMapping ("/edit/{nurseId}")
+@GetMapping ("/editnurse/{nurseId}")
 public Nurse editNData(@PathVariable int nurseId)
 {
 	
@@ -206,7 +218,7 @@ public Nurse editNData(@PathVariable int nurseId)
 	
 }
 
-@PutMapping("/update")
+@PutMapping("/updatenurse")
 public List<Nurse> updateData(@RequestBody Nurse n)
 {
     List<Nurse>	l=ni.updateData(n);
@@ -214,7 +226,7 @@ public List<Nurse> updateData(@RequestBody Nurse n)
 	
 }
 
-@DeleteMapping("/delete/{nurseId}")
+@DeleteMapping("/deletenurse/{nurseId}")
 public List<Nurse> deleteData(@PathVariable int nurseId)
 {
 	List<Nurse> l=ni.deleteData(nurseId);
